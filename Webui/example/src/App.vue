@@ -1,21 +1,24 @@
 <template>
-  <h1>{{ message }}</h1>
+  <div id="app">
+    <productListVue/>
+  </div>
 </template>
-
 <script>
-import { ref } from "vue";
+import productListVue from './components/productList.vue';
+
 
 export default {
 
   name: 'App',
   components: {
+    productListVue,
 
   },
   setup() {
-    const message = ref("Hello");
+  
 
     return {
-      message,
+    
     };
   },
 }
